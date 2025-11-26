@@ -70,3 +70,26 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+let gryffindor = "";
+let teatcherDog = "";
+for (let witcher of hogwarts) {
+  const {
+    firstName: name,
+    lastName: surname,
+    house,
+    pet,
+    occupation,
+  } = witcher;
+
+  const text = name + " " + surname + "\n";
+  if (house === "Gryffindor") {
+    gryffindor += text;
+    if (pet && occupation === "Teacher") {
+      teatcherDog += text;
+    }
+  }
+}
+
+console.log(`\nGryffindor Residents:\n${gryffindor}`);
+console.log(`\nGryffindor Teacher who has pet:\n${teatcherDog}`);
