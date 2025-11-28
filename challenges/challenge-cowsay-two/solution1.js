@@ -4,27 +4,43 @@
 // https://nodejs.dev/learn/nodejs-accept-arguments-from-the-command-line
 // =================
 
-// 1. Accept arguments
-
-// how will you accept arguments?
-
-// 2. Make supplies for our speech bubble
-
-let topLine = '_';
-let bottomLine = '-';
-let saying = '';
-
-// 3. Make a cow that takes a string
-
-function cowsay(saying) {
-// how will you make the speech bubble contain the text?
-
-// where will the cow picture go?
-
-// how will you account for the parameter being empty?
+function drawBubble(str, lg){
+  if(!str){return}
+  let bubble = "";
+  bubble += ` ${"–".repeat(lg + 2)} \n`;
+  bubble += `< ${str} >\n`;
+  bubble += ` ${"-".repeat(lg + 2)}`;
+  console.log(bubble);
 
 }
 
-//4. Pipe argument into cowsay function and return a cow
+function drawCow(talk, lg){
+  const prefix = (" ").repeat(lg + 2 - Math.round(lg / 2));
+  const stucks = [
+    `${talk?"\\  ^——^":"   ^——^"}\n`,
+    `${talk?" \\ (oo)\________":"   (oo)\________"}\n`,
+    `   (__)\\       )\\/\\\n`,
+    `       ||----w |\n`,
+    `       ||     ||`
+  ].map((row)=> prefix + row);
+console.log(stucks.join(""));
 
-// how will you log this to the console?
+}
+
+function cowsay() {
+  // Get console argument.
+  const talk = process.argv.at(2);
+  // If no argument.
+  if(!talk){
+    console.log("No talk");
+    return;
+  }
+  const lg = talk.length;
+  drawCow(false, lg);
+  setTimeout(()=>{
+    drawBubble(talk,lg);
+    drawCow(true, lg);
+  }, 1000);
+}
+
+cowsay();
