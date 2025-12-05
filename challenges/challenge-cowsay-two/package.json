@@ -1,0 +1,27 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "description": "Javascript and node.js challenges.",
+  "keywords": [
+    "javascript",
+    "HYF"
+  ],
+  "homepage": "https://github.com/serotonine/HYF-Module-Data-Flows#readme",
+  "bugs": {
+    "url": "https://github.com/serotonine/HYF-Module-Data-Flows/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serotonine/HYF-Module-Data-Flows.git"
+  },
+  "license": "ISC",
+  "author": "Serotonine",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
