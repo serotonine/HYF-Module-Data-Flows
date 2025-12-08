@@ -1,7 +1,7 @@
 .content {
+  background-color: var(--color-main);
   display: grid;
   grid-template-rows: auto 1fr auto auto auto;
-
   height: 100vh;
   overflow: hidden;
 }
@@ -35,15 +35,14 @@
   display: grid;
   justify-content: center;
   align-content: center;
-
   overflow: hidden;
   position: relative;
   margin: 20px 0;
 }
 
 .photo::before {
-  content: "loading";
-
+  content: "loading...";
+  color:white;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -57,6 +56,9 @@
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+.photo.init::before{
+  content: "Please search a location";
 }
 
 .photo__dummy,
@@ -220,11 +222,11 @@
 /*----------------------------------------------------------------------------*/
 @media (min-width: 768px) {
   .title {
-    font-weight: 100;
+    font-weight: 400;
   }
 
   .thumbs {
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .controls {

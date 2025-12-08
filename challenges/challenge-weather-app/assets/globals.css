@@ -12,10 +12,11 @@
 
 :root {
   --thumb-w: 80px;
-  --thumb-h: 45px;
+  --thumb-h: 80px;
   --thumbs-px: 10px;
   --thumbs-py: 10px;
   --thumbs-h: calc(var(--thumb-h) + (var(--thumbs-py) * 2));
+  --color-main:oklab(30.993% -0.01087 -0.01628);
 }
 
 html,
