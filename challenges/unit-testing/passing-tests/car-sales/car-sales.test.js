@@ -12,10 +12,10 @@ test("Car sales", function () {
   ];
 
   let totals = {
-    Ford: 22999,
-    Honda: 8000,
+    "Ford": 22999,
+    "Honda": 8000,
     "Land Rover": 21000,
-    Toyota: 6500,
+    "Toyota": 6500,
   };
 
   let output = sales(carsSold);
