@@ -1,3 +1,5 @@
+# Jest 30 supports ES Modules natively, but you should use the jest command directly (via npx or yarn). You don’t need --experimental-vm-modules anymore:
+
 # Example setup using Jest and EJS
 
 It can be a bit tricky to see how to use EJS modules with Jest. The error message you get is not very helpful. This is a simple example of how to set up Jest to work with EJS.

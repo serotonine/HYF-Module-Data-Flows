@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <h3><%= title %></h3>
+  <dl>
+    <% books.forEach(book => { %>
+      <dt><strong><%= book.author %></strong></dt>
+      <% (book.books).forEach(item => { %>
+      <dd><%= item %></dd>
+      <% }); %>
+    <% }); %>
+    </dl>
+</body>
+</html>

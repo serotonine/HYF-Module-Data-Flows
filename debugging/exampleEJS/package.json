@@ -1,14 +1,20 @@
 {
   "name": "book-library",
   "version": "1.0.0",
-  "description": "## topics: debugging, DOM",
-  "main": "script.mjs",
+  "description": "A book library app using Express, EJS, and Jest",
   "type": "module",
+  "main": "script.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
-  },
+  "start": "node script.js",
+  "test": "node --experimental-vm-modules node_modules/.bin/jest"
+},
   "dependencies": {
-    "jest": "^29.7.0"
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "jsdom": "24.1.0"
   },
   "jest": {
     "testEnvironment": "node",
