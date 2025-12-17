@@ -1,21 +1,12 @@
 function removeVowels(word) {
-  let characters = word.split("");
-
-  let result = [];
-
-  characters.forEach(function (character) {
-    if (
-      character !== "a" &&
-      character !== "o" &&
-      character !== "i" &&
-      character !== "e" &&
-      character !== "u"
-    ) {
-      result.push(character);
+  const vowels = ["a", "o", "i", "e", "u"];
+  let result = "";
+  for (letter of word) {
+    if (!vowels.includes(letter.toLowerCase())) {
+      result += letter;
     }
-  });
-
-  return result.join("");
+  }
+  return result;
 }
 
 module.exports = removeVowels;
