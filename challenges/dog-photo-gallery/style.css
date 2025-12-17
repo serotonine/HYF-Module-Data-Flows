@@ -3,36 +3,18 @@
   --fig-h: 300px;
   --grid-gap: 1rem;
   --header-h: 180px;
-  --color-dark-100: oklab(25% -0.01087 -0.01628);    /* Plus sombre */
+  --color-dark-100: oklab(25% -0.01087 -0.01628);
   --color-dark-90:  oklab(27% -0.01087 -0.01628);
-  --color-dark-80:  oklab(30.993% -0.01087 -0.01628); /* Votre couleur de référence */
-  --color-dark-70:  oklab(35% -0.01087 -0.01628);
-  --color-dark-60:  oklab(40% -0.01087 -0.01628);
-  --color-dark-50:  oklab(45% -0.01087 -0.01628);
-  --color-dark-40:  oklab(50% -0.01087 -0.01628);
-  --color-dark-30:  oklab(55% -0.01087 -0.01628);
-  --color-dark-20:  oklab(60% -0.01087 -0.01628);
+  --color-dark-80:  oklab(30.993% -0.01087 -0.01628);
   --color-dark-10:  oklab(70% -0.01087 -0.01628);
-  --color-blue-100: oklab(50% -0.08 -0.15);
-  --color-blue-90:  oklab(55% -0.08 -0.15);
   --color-blue-80:  oklab(60% -0.08 -0.15);
   --color-blue-70:  oklab(65% -0.08 -0.15);
   --color-blue-60:  oklab(70% -0.08 -0.15);
   --color-blue-50:  oklab(75% -0.08 -0.15);
-  --color-blue-40:  oklab(80% -0.08 -0.15);
-  --color-blue-30:  oklab(85% -0.08 -0.15);
-  --color-blue-20:  oklab(90% -0.08 -0.15);
-  --color-blue-10:  oklab(95% -0.08 -0.15);
-  --color-yellow-100: oklab(60%  0.15  0.20);    /* Jaune saturé sombre */
-  --color-yellow-90:  oklab(65%  0.15  0.20);
-  --color-yellow-80:  oklab(70%  0.15  0.20);
-  --color-yellow-70:  oklab(75%  0.15  0.20);
-  --color-yellow-60:  oklab(80%  0.15  0.20);
-  --color-yellow-50:  oklab(85%  0.15  0.20);    /* Jaune saturé moyen */
+  --color-yellow-100: oklab(60%  0.15  0.20); 
+  --color-yellow-50:  oklab(85%  0.15  0.20);
   --color-yellow-40:  oklab(90%  0.15  0.20);
   --color-yellow-30:  oklab(92%  0.15  0.20);
-  --color-yellow-20:  oklab(95%  0.15  0.20);
-  --color-yellow-10:  oklab(97%  0.15  0.20);
 }
 
 html * {
@@ -120,7 +102,7 @@ button{
   }
 }
 .error{
-  color:red;
+  color:var(--color-yellow-100);
 }
 .hidden{display:none;}
 
